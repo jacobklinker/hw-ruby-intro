@@ -45,7 +45,7 @@ class BookInStock
   attr_accessor :price
   def initialize(isbn, price)
     if (isbn.length == 0 || price <= 0)
-      raise ArgumentError.new("")
+      raise ArgumentError.new("Invalid params")
     end
     @isbn = isbn
     @price = price

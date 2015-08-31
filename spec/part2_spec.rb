@@ -45,7 +45,7 @@ describe "#binary_multiple_of_4?" do
     ["1010101010100", "0101010101010100", "100", "0"].each do |string|
       expect(binary_multiple_of_4?(string)).to be_truthy,  "Incorrect results for input: \"#{string}\""
     end
-    ["101", "1000000000001", "10"].each do |string|
+    ["101", "1000000000001", "10", "1"].each do |string|
       expect(binary_multiple_of_4?(string)).not_to be_truthy,  "Incorrect results for input: \"#{string}\""
     end
   end
