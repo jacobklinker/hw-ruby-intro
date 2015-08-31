@@ -1,5 +1,3 @@
-# When done, submit this entire file to the autograder.
-
 # Part 1
 
 def sum arr
@@ -33,8 +31,8 @@ def starts_with_consonant? s
 end
 
 def binary_multiple_of_4? s
-  if s.length == 1 || s.length == 2
-    return !s.match(/1/)
+  if s.length == 1
+    return s == '0'
   else
     return s.match(/^[10]*00$/)
   end
